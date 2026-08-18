@@ -23,8 +23,8 @@ def evaluate(y_actual, y_pred):
 
 # Test: simulating our rare-disease example
 # 1000 patients, 1 actually has the disease, model predicts "no disease" for everyone
-y_actual = np.array([0]*999 + [1])       # 999 healthy, 1 sick
-y_pred   = np.array([0]*1000)             # model always predicts "healthy"
+y_actual = np.array([1,1,1,0,0,0,1,0])       # 999 healthy, 1 sick
+y_pred   = np.array([1,0,1,0,1,0,1,0])             # model always predicts "healthy"
 
 results = evaluate(y_actual, y_pred)
 print(results)
