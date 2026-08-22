@@ -73,3 +73,8 @@ y=df['survived']
 X_temp,X_test,y_temp,Y_test=train_test_split(X,y,test_size=0.2,random_state=42)
 #Second Split:split remaining 80% into train/validation
 X_train,X_val,y_train,y_val=train_test_split(X_temp,y_temp,test_size=0.25,random_state=42)
+df['fare']=minmax.fit_transform(df[['fare']])
+print(df['fare'].min()," ",df['fare'].max())
+df_encoded = pd.get_dummies(df, columns=['class'], drop_first=True)
+print(df_encoded.columns)
+print(df_encoded[['class_Second', 'class_Third']].head())
