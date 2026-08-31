@@ -3,3 +3,4 @@
 * __Confusion Matrix__
 * __Convolution Layer__
 * __Under Fitting__
+* __Drop Out__
