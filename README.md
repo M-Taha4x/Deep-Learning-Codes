@@ -4,3 +4,4 @@
 * __Convolution Layer__
 * __Under Fitting__
 * __Drop Out__
+* __Max Pool__
