@@ -1,5 +1,5 @@
 import numpy as np
-x=np.array([3,2])
+x=np.array([3,4])
 w=np.array([3,1])
 b=2.4
 def neuron(x,w,b,activation='relu'):
